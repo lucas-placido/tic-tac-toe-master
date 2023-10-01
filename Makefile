@@ -13,4 +13,7 @@ type:
 lint:
 	flake8 .
 
+audit:
+	pip-audit .
+	
 ci: sort format type lint test
