@@ -9,8 +9,11 @@ up: docker-up
 
 down: docker-down
 
+install: 
+	poetry install
+
 #### CI
-format:
+format: 
 	blue .
 
 sort:
@@ -26,6 +29,6 @@ lint:
 	flake8 .
 
 audit:
-	pip-audit .
+	pip-audit
 
-ci: sort format type lint audit test
+ci: sort format type lint test

@@ -1,6 +1,6 @@
 name: Build and Test
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -24,6 +24,9 @@ jobs:
       run: |
         poetry install
       working-directory: .
+
+    - name: pip-audit
+      uses: trailofbits/gh-action-pip-audit@v0.0.4
 
     - name: Run make ci
       run: |

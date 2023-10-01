@@ -1,1 +1,9 @@
-batatata amassada
+version: '3'
+services:
+  poetry_env:
+    build:
+      context: ./containers/poetry/
+    volumes:
+      - .:/app
+    tty: true
+    stdin_open: true
