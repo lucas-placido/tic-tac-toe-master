@@ -25,6 +25,11 @@ jobs:
         poetry install
       working-directory: .
 
+    - name: list
+      run: |
+        ls
+      working-directory: .
+
     - name: Run make ci
       run: |
         make ci
