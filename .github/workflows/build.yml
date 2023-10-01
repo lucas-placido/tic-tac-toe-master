@@ -23,7 +23,7 @@ jobs:
     - name: Install project dependencies
       run: |
         poetry install
-      working-directory: ./tic-tac-toe-master
+      working-directory: .
 
     - name: Run make ci
       run: |
