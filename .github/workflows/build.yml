@@ -28,6 +28,7 @@ jobs:
     - name: Start env
       run: |
         poetry shell
+      working-directory: .
 
     - name: Run make ci
       run: |
