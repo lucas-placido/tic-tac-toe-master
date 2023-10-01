@@ -28,7 +28,4 @@ lint:
 audit:
 	pip-audit .
 
-shell:
-	poetry shell
-
 ci: sort format type lint audit test
