@@ -28,4 +28,4 @@ jobs:
     - name: Run make ci
       run: |
         make ci
-      working-directory: ./tic-tac-toe-master
+      working-directory: .
