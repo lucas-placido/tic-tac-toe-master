@@ -20,7 +20,7 @@ sort:
 	isort .
 
 test:
-	pytest ./tests 
+	pytest . --cov="tic_tac_toe_master"
 
 coverage:
 	pytest --cov=.
