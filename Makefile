@@ -20,10 +20,7 @@ sort:
 	isort .
 
 test:
-	pytest . --cov="tic_tac_toe_master"
-
-coverage:
-	pytest --cov=.
+	pytest . --cov=.
 
 type:
 	mypy .
