@@ -20,7 +20,10 @@ sort:
 	isort .
 
 test:
-	pytest ./tests
+	pytest ./tests 
+
+coverage:
+	pytest --cov=.
 
 type:
 	mypy .
