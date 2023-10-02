@@ -1,6 +1,6 @@
 name: Build and Test
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -24,6 +24,11 @@ jobs:
       run: |
         poetry install
       working-directory: .
+
+    - name: pip-audit
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
 
     - name: Run make ci
       run: |
