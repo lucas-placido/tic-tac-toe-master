@@ -1,0 +1,1 @@
+[![codecov](https://codecov.io/gh/ludsonfelipe/tic-tac-toe-master/graph/badge.svg?token=cW3Z0USoRC)](https://codecov.io/gh/ludsonfelipe/tic-tac-toe-master)
