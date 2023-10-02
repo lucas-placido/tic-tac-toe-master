@@ -20,7 +20,7 @@ sort:
 	isort .
 
 test:
-	pytest . --cov=.
+	pytest . --cov=. --cov-report=xml
 
 type:
 	mypy .
