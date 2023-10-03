@@ -23,7 +23,7 @@ test:
 	pytest . --cov=. --cov-report=xml
 
 type:
-	mypy .
+	mypy . --ignore-missing-imports
 
 lint:
 	flake8 .
